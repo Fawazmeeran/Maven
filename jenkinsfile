@@ -1,0 +1,10 @@
+node {
+      agent any
+      stage("Check out"){
+            git "https://github.com/Fawazmeeran/Maven.git"
+      }
+      stage("Creating build"){
+             sh "'/Users/athena/Desktop/maven/apache-maven-3.5.3/bin/mvn' clean package"
+       }      
+}             
+      
